@@ -1,7 +1,11 @@
-import ListGroup from "./components/ListGroup";
+import Food from "./components/ListGroup";
 
-function App(){
-return <div><ListGroup /></div>
+export function App() {
+  return (
+    <div>
+      <Food />
+    </div>
+  );
 }
 
 export default App;
