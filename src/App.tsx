@@ -1,13 +1,12 @@
-import Component from "./components/1stComponent";
-import Submit from "./components/Buttons";
+import Manhwa from "./components/Manhwa";
 
-export const App = () => {
+const App = () => {
   return (
-    <h1>
-      <Component />
-      <Submit />
-    </h1>
+    <>
+      <section className="Manhwa-List">
+        <Manhwa />
+      </section>
+    </>
   );
 };
-
 export default App;
