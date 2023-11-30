@@ -1,16 +1,18 @@
-const Manhwa = () => {
-  const manhwas = [
+import { ArrowBigRightDash } from "lucide-react";
+
+export function Manhwa() {
+  const List = [
     {
       Image: "../../public/Existence.png",
       Title: "Existence",
     },
     {
-      Image: "../../public/Disaster-Class-Hero.png",
-      Title: "Return of the Disaster Class Hero",
-    },
-    {
       Image: "../../public/Mount-Hua-Sect.jpg",
       Title: "Return of the Mount Hua Sect",
+    },
+    {
+      Image: "../../public/Disaster-Class-Hero.png",
+      Title: "Return of the Disaster Class Hero",
     },
     {
       Image: "../../public/Existence.png",
@@ -18,7 +20,7 @@ const Manhwa = () => {
     },
   ];
 
-  const renderManhwa = manhwas.map((props, index) => (
+  const RenderThis = List.map((props, index) => (
     <article className="Components-Container" key={index}>
       <div className="image-container">
         <Image image={props.Image} />
@@ -30,11 +32,38 @@ const Manhwa = () => {
     </article>
   ));
 
-  return <>{renderManhwa}</>;
+  return <>{RenderThis}</>;
+}
+
+const Image = (props) => {
+  return (
+    <div>
+      <img src={props.image} />
+    </div>
+  );
 };
 
-const Image = (props) => <img src={props.image} alt={props.title} />;
-const Title = (props) => <h1>{props.title}</h1>;
-const Read = () => <button>Read</button>;
+const Title = (props) => {
+  return <h1>{props.title}</h1>;
+};
 
+const Read = () => {
+  return (
+    <button>
+      Read <ArrowBigRightDash size={16} strokeWidth={3} />
+    </button>
+  );
+};
 export default Manhwa;
+
+// Image: "../../public/Existence.png",
+// Title: "Existence",
+
+// Image: "../../public/Mount-Hua-Sect.jpg",
+// Title: "Return of the Mount Hua Sect",
+
+// Image: "../../public/Disaster-Class-Hero.png",
+// Title: "Return of the Disaster Class Hero",
+
+// Image: "../../public/Existence.png",
+// Title: "Existence",
