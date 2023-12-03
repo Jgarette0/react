@@ -42,32 +42,3 @@ const Read = () => {
   return <button>Read</button>;
 };
 export default Manhwa;
-
-// Image: "../../public/Existence.png",
-// Title: "Existence",
-
-// Image: "../../public/Mount-Hua-Sect.jpg",
-// Title: "Return of the Mount Hua Sect",
-
-// Image: "../../public/Disaster-Class-Hero.png",
-// Title: "Return of the Disaster Class Hero",
-
-// Image: "../../public/Existence.png",
-// Title: "Existence",
-
-// {
-//   Image: "../../public/Existence.png",
-//   Title: "Existence",
-// },
-// {
-//   Image: "../../public/Mount-Hua-Sect.jpg",
-//   Title: "Return of the Mount Hua Sect",
-// },
-// {
-//   Image: "../../public/Disaster-Class-Hero.png",
-//   Title: "Return of the Disaster Class Hero",
-// },
-// {
-//   Image: "../../public/Existence.png",
-//   Title: "Existence",
-// },
