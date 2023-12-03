@@ -1,58 +1,45 @@
-import { ArrowBigRightDash } from "lucide-react";
-
-export function Manhwa() {
+const Manhwa = () => {
   const List = [
     {
-      Image: "../../public/Existence.png",
-      Title: "Existence",
+      image: "../../public/Existence.png",
+      title: "Existence",
     },
     {
-      Image: "../../public/Mount-Hua-Sect.jpg",
-      Title: "Return of the Mount Hua Sect",
+      image: "../../public/Mount-Hua-Sect.jpg",
+      title: "Return of the Mount Hua Sect",
     },
     {
-      Image: "../../public/Disaster-Class-Hero.png",
-      Title: "Return of the Disaster Class Hero",
+      image: "../../public/Disaster-Class-Hero.png",
+      title: "Return of the Disaster Class Hero",
     },
     {
-      Image: "../../public/Existence.png",
-      Title: "Existence",
+      image: "../../public/Existence.png",
+      title: "Existence",
     },
   ];
-
-  const RenderThis = List.map((props, index) => (
+  const renderDezNutz = List.map((props, index) => (
     <article className="Components-Container" key={index}>
       <div className="image-container">
-        <Image image={props.Image} />
+        <Image images={props.image} />
       </div>
       <div className="text-container">
-        <Title title={props.Title} />
+        <Title titles={props.title} />
         <Read />
       </div>
     </article>
   ));
-
-  return <>{RenderThis}</>;
-}
-
-const Image = (props) => {
-  return (
-    <div>
-      <img src={props.image} />
-    </div>
-  );
+  return <>{renderDezNutz}</>;
 };
 
 const Title = (props) => {
-  return <h1>{props.title}</h1>;
+  return <h1>{props.titles}</h1>;
+};
+const Image = (props) => {
+  return <img src={props.images} alt="exitence" />;
 };
 
 const Read = () => {
-  return (
-    <button>
-      Read <ArrowBigRightDash size={16} strokeWidth={3} />
-    </button>
-  );
+  return <button>Read</button>;
 };
 export default Manhwa;
 
@@ -67,3 +54,20 @@ export default Manhwa;
 
 // Image: "../../public/Existence.png",
 // Title: "Existence",
+
+// {
+//   Image: "../../public/Existence.png",
+//   Title: "Existence",
+// },
+// {
+//   Image: "../../public/Mount-Hua-Sect.jpg",
+//   Title: "Return of the Mount Hua Sect",
+// },
+// {
+//   Image: "../../public/Disaster-Class-Hero.png",
+//   Title: "Return of the Disaster Class Hero",
+// },
+// {
+//   Image: "../../public/Existence.png",
+//   Title: "Existence",
+// },

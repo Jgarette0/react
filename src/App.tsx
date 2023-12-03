@@ -1,11 +1,10 @@
 import Manhwa from "./components/Manhwa";
 
-export const App = () => (
-  <>
+const App = () => {
+  return (
     <section className="Manhwa-List">
       <Manhwa />
     </section>
-  </>
-);
-
+  );
+};
 export default App;

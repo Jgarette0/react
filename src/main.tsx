@@ -9,3 +9,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <App />
   </React.StrictMode>
 );
+
+// const arr = ["foo", "bob", "lee"];
+
+// const [one, , three] = arr;
+
+// console.log(one, three);
+
+// let b = "boy";
+// let g = "girl";
+
+// [g, b] = [b, g];
+// console.log(b, g);
