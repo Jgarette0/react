@@ -35,7 +35,7 @@ const Title = (props) => {
   return <h1>{props.titles}</h1>;
 };
 const Image = (props) => {
-  return <img src={props.images} alt="exitence" />;
+  return <img src={props.images} alt={props.title} />;
 };
 
 const Read = () => {
